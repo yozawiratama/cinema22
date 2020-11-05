@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Router from 'next/router'
-
+import Router from "next/router";
 
 const Navbar = () => {
   const [isActive, toggleActive] = useState(false);
@@ -9,7 +8,7 @@ const Navbar = () => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-        Router.push(`/search/${searchKeyword}`);
+      Router.push(`/search/${searchKeyword}`);
     }
   };
 
@@ -58,15 +57,12 @@ const Navbar = () => {
               <span>About</span>
             </a>
           </Link>
-
-          <Link href="/love">
-            <a className="navbar-item">
-              <span className="icon has-text-danger">
-                <i className="fa fa-heart"></i>
-              </span>
-              <span>Love</span>
-            </a>
-          </Link>
+          <a href="https://www.linkedin.com/in/yozawiratama/" target="_blank" className="navbar-item">
+            <span className="icon has-text-danger">
+              <i className="fa fa-heart"></i>
+            </span>
+            <span>Love</span>
+          </a>
         </div>
 
         <div className="navbar-end">
