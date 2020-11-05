@@ -1,11 +1,11 @@
 import Meta from '../components/Meta';
 import Layout from '../components/Layout';
-import Breadcumb from '../components/Breadcumb';
+import Breadcrumb from '../components/Breadcrumb';
 
 const About = () => (
     <Layout>
       <Meta title="" description="" />
-      <Breadcumb
+      <Breadcrumb
           items={[
             {
               path: "/about",

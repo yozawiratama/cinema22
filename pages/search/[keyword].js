@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 import Meta from "../../components/Meta";
 import Layout from "../../components/Layout";
-import Breadcumb from "../../components/Breadcumb";
+import Breadcrumb from "../../components/Breadcrumb";
 import MovieGrid from "../../components/MovieGrid";
 
 function SearchKeyword() {
@@ -13,7 +13,7 @@ function SearchKeyword() {
     <Layout>
       <Meta title={`Cari ${keyword} - Cinema22`} description="Best movie database for you." />
       <br />
-      <Breadcumb
+      <Breadcrumb
         items={[
           {
             icon: "fa-search",

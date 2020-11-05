@@ -1,30 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Cinema22 adalah aplikasi web untuk mengakses informasi tentang Movie. Dibuat dengan NextJS (ReactJs SSR). Agar dapat mendukung SEO.
 
 ## Getting Started
 
-First, run the development server:
+Sebelum menjalakan aplikasi, buatlah file `.env.local` di `root`. Dengan isi :
 
-```bash
-npm run dev
-# or
-yarn dev
+```
+MOVIEDB_KEY = someofyourmoviedbkey
+NEXT_PUBLIC_MOVIEDB_KEY = someofyourmoviedbkey
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+untuk mendapatkan moviedb_key silahkan akses : https://developers.themoviedb.org/3/getting-started/introduction
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Setelah itu dapat membuka terminal dan jalankan server :
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Buka [http://localhost:3000](http://localhost:3000) di browser Anda, dan nikmati aplikasinya.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Components
+Aplikasi ini memiliki beberapa komponen yaitu :
+- Breadcrumb
+- Footer
+- GridItem
+- Layout
+- Meta
+- MovieGrid
+- Navbar
+- Pagination

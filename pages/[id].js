@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 import Meta from "../components/Meta";
 import Layout from "../components/Layout";
-import Breadcumb from "../components/Breadcumb";
+import Breadcrumb from "../components/Breadcrumb";
 
 const Detail = ({ movie }) => {
   let router = useRouter();
@@ -11,7 +11,7 @@ const Detail = ({ movie }) => {
   return (
     <Layout>
       <Meta title={`${movie.title} - Cinema22`} description={movie.overview} />
-      <Breadcumb
+      <Breadcrumb
         items={[
           {
             path: router.asPath,

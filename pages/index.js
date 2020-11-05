@@ -1,6 +1,6 @@
 import Meta from "../components/Meta";
 import Layout from "../components/Layout";
-import Breadcumb from "../components/Breadcumb";
+import Breadcrumb from "../components/Breadcrumb";
 import MovieGrid from "../components/MovieGrid";
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
     <Layout>
       <Meta title="Cinema22"  description="Best movie database for you." />
       <br />
-      <Breadcumb items={[]} />
+      <Breadcrumb items={[]} />
       <br />
       <MovieGrid url={`https://api.themoviedb.org/4/discover/movie?api_key=${process.env.NEXT_PUBLIC_MOVIEDB_KEY}`} />
     </Layout>
